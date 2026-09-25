@@ -81,7 +81,13 @@ root (they are not in this repo; see above):
   resting-state scans (`rfMRI_raw/*.dtseries.nii`, ~105 GB) and
   `subject_list_HCP.txt`. Only steps 4 and 6 below need these.
 
-Then run in this order (each step's outputs are the next step's inputs):
+To run everything in one go (steps 1–6 and then all figures, with a log
+in `run_pipeline_log.txt`), run `run_pipeline` from the repository root.
+It takes several hours, so on a server start it in the background, e.g.
+`nohup matlab -batch "run_pipeline" > run_pipeline_console.txt 2>&1 &`.
+
+Or run the scripts yourself in this order (each step's outputs are the
+next step's inputs):
 
 | # | Script | Needs | Produces |
 |---|---|---|---|
