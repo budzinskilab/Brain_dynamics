@@ -49,6 +49,9 @@ structural-connectome eigenmodes.
 
 ## How to run the code
 
+To run the project on the lab server (parana) from your own account, see
+[SERVER_GUIDE.md](SERVER_GUIDE.md).
+
 All scripts are MATLAB and use paths relative to the repository root,
 so **always run them from the repository root** (`cd` into it first).
 

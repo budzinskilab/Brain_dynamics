@@ -12,6 +12,7 @@
 # --- Root-level scripts and docs ---
 !/*.m
 !/README.md
+!/SERVER_GUIDE.md
 !/.gitignore
 !/Project Update.pptx
 
