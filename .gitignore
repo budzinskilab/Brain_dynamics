@@ -1,0 +1,30 @@
+# PRIVATE lab repository (budzinskilab). Tracks our own code, our
+# results and the presentation deck. NOT tracked: HCP-derived input data,
+# the source papers' code releases (pang2023_BrainEigenmodes, Vohryzek2024),
+# the PDF article library, and result files over 50 MB (GitHub's limits;
+# listed below and in the README).
+#
+# Strategy: ignore everything by default, then explicitly un-ignore the
+# specific files/folders that are our own code or docs.
+
+/*
+
+# --- Root-level scripts and docs ---
+!/*.m
+!/README.md
+!/.gitignore
+!/Project Update.pptx
+
+# --- Our own code folders ---
+!/functions/
+
+# --- Our results (figures and .mat outputs) ---
+!/results/
+
+# --- Result files over 50 MB: too large for GitHub, kept local only (see README) ---
+/results/EDR_LR_connectome_full_resolution.mat
+/results/step4_5_full_resolution_reconstruction.mat
+
+# Never track local editor/session settings or stray OS files anywhere
+.claude/
+.DS_Store
