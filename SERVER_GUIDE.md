@@ -6,19 +6,19 @@ Gop's project folder and is shared read-only, so nothing large is copied.
 
 ## 0. One-time setup (Gop does this)
 
-Gop gives your account read access to the project, replacing `PROF` with
+Gop gives your account read access to the project, replacing `User` with
 your parana username:
 
 ```bash
-setfacl -m u:PROF:x ~
-setfacl -R -m u:PROF:rX ~/brain_connectome_harmonics
-setfacl -R -d -m u:PROF:rX ~/brain_connectome_harmonics
+setfacl -m u:User:x ~
+setfacl -R -m u:User:rX ~/brain_connectome_harmonics
+setfacl -R -d -m u:User:rX ~/brain_connectome_harmonics
 ```
 
 ## 1. Get the code
 
 ```bash
-ssh PROF@parana
+ssh User@parana
 git clone https://github.com/budzinskilab/Brain_dynamics.git ~/brain_dynamics
 cd ~/brain_dynamics
 ```
